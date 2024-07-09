@@ -30,7 +30,7 @@ const Contact = () => {
       className="flex justify-center items-center pt-32 pb-12 bg-slate-950 px-10 mx-auto "
       id="contact"
     >
-      <div className="w-[75rem]">
+      <div className="w-[20rem]">
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -67,7 +67,7 @@ const Contact = () => {
                 onClick={handleEmail}
                 className="text-sky-100 flex items-center gap-2 mb-1 cursor-pointer"
               >
-                <i class="fa-solid fa-envelope text-[17px]"></i>
+                <i className="fa-solid fa-envelope text-[17px] break-words"></i>
                 mfuadfakhruzzaki@students.undip.ac.id
               </div>
               <div
