@@ -27,68 +27,62 @@ const Contact = () => {
 
   return (
     <div
-      className="flex justify-center items-center pt-32 pb-12 bg-slate-950 px-10 mx-auto "
+      className="flex justify-center items-center pt-32 pb-12 bg-slate-950"
       id="contact"
     >
-      <div className="w-[20rem]">
+      <div className="w-full sm:w-[35rem] max-w-screen-lg">
         <motion.div
           initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{
-            delay: 0.1,
-          }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.1 }}
+          className="text-center sm:text-left"
         >
           <h1 className="text-3xl md:text-5xl text-transparent bg-clip-text bg-gradient-to-r from-sky-200 to-white font-bold">
-            Get in touch with me!<span className="text-white">👇🏻</span>
+            Get in touch with me!<span className="text-white"></span>
           </h1>
         </motion.div>
         <motion.div
-          className="sm:flex gap-16 items-center sm:mt-16 mt-10"
           initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{
-            delay: 0.3,
-          }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.3 }}
+          className="flex flex-col sm:flex-row gap-6 items-center mt-10 sm:mt-16"
         >
           <img
             src="images/pasfoto.png"
             alt=""
             className="w-32 h-32 rounded-full object-cover"
           />
-          <span className="absolute text-5xl translate-x-16 sm:translate-y-10 -translate-y-12"></span>
-          <div className="flex flex-col gap-8">
-            <p className="text-xl text-transparent bg-clip-text bg-gradient-to-t from-sky-500 to-sky-200 mt-10 sm:mt-0">
+          <div className="flex flex-col gap-4 sm:gap-8">
+            <p className="text-xl text-center sm:text-start text-transparent bg-clip-text bg-gradient-to-t from-sky-500 to-sky-200">
               Contact me via
             </p>
-            <div className="text-xl">
+            <div className="text-lg">
               <div
                 onClick={handleEmail}
-                className="text-sky-100 flex items-center gap-2 mb-1 cursor-pointer"
+                className="flex items-center gap-2 cursor-pointer text-sky-100"
               >
-                <i className="fa-solid fa-envelope text-[17px] break-words"></i>
+                <i className="fa-solid fa-envelope text-[12px]"></i>
                 mfuadfakhruzzaki@students.undip.ac.id
               </div>
               <div
                 onClick={handleWhatsapp}
-                className="text-sky-100 flex items-center gap-2 cursor-pointer"
+                className="flex items-center gap-2 cursor-pointer text-sky-100"
               >
-                <i class="fa-brands fa-whatsapp"></i>
+                <i className="fa-brands fa-whatsapp"></i>
                 +6281392302787
               </div>
               <div
                 onClick={handleGithub}
-                className="text-sky-100 flex items-center gap-2 cursor-pointer"
+                className="flex items-center gap-2 cursor-pointer text-sky-100"
               >
-                <i class="fa-brands fa-github"></i>
+                <i className="fa-brands fa-github"></i>
                 fuadfakhruz
               </div>
               <div
                 onClick={handleLinkedin}
-                className="text-sky-100 flex items-center gap-2 cursor-pointer"
+                className="flex items-center gap-2 cursor-pointer text-sky-100"
               >
-                <i class="fa-brands fa-linkedin"></i>
+                <i className="fa-brands fa-linkedin"></i>
                 Muhammad Fuad Fakhruzzaki
               </div>
             </div>
@@ -96,15 +90,11 @@ const Contact = () => {
         </motion.div>
         <motion.div
           initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{
-            delay: 0.5,
-          }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.5 }}
+          className="text-lg text-cyan-700 mt-10 sm:mt-20 text-center font-medium"
         >
-          <p className="text-lg text-cyan-700 mt-20 text-center sm:text-left">
-            Built with Vite and Tailwind CSS by Muhammad Fuad Fakhruzzaki
-          </p>
+          Built with Vite and Tailwind CSS by Fuad Fakhruz.
         </motion.div>
       </div>
     </div>
