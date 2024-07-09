@@ -104,7 +104,7 @@ const Projects = () => {
             <Projek
               location="images/sedap.jpg" // Ubah sesuai dengan URL halaman kedua
               title="Sedap (Semarang dalam Aplikasi)"
-              description="Aplikasi mobile berbasis kotlin untuk panggilan darurat, seperti polisi, rumah sakit, dan pemadam kebakaran. Aplikasi ini dibuat guna memenuhi tugas akhir mata kuliah pemrograman perangkat bergerak."
+              description="Aplikasi mobile berbasis java untuk panggilan darurat, seperti polisi, rumah sakit, dan damkar. Aplikasi ini dibuat guna memenuhi tugas akhir mata kuliah pemrograman perangkat bergerak."
             />
             <Projek
               href="/project-3" // Ubah sesuai dengan URL halaman ketiga
