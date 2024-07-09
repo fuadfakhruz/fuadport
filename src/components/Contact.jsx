@@ -27,7 +27,7 @@ const Contact = () => {
 
   return (
     <div
-      className="flex justify-center items-center pt-32 pb-12 bg-slate-950 px-5 xl:px-0"
+      className="flex justify-center items-center pt-32 pb-12 bg-slate-950 px-10 mx-auto "
       id="contact"
     >
       <div className="w-[75rem]">
